@@ -8,6 +8,7 @@
  *
  * @author Bob Troia <bob@quantifiedbob.com>
  * @link   http://www.quantifiedbob.com
+ * @license MIT License (see LICENSE.md)
  * 
  * Usage:
  * This script can be run several ways. You can edit the BASIS_USERNAME, BASIS_PASSWORD, 
@@ -34,7 +35,6 @@
  *   This assumes your script is in a location that is executable via a web server,
  *   i.e., http://localhost/basis-data-export/basisdataexport.php?u=[basis_username]&p=[basis_password]&d=[YYYY-MM-DD]&f=[format]
  *
- *  
 */
 require_once(dirname(__FILE__) . '/BasisExport.class.php'); 
 
@@ -96,7 +96,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception: ',  $e->getMessage(), "\n";
 }
-
 
 /**
 * Take parameters via command-line args
